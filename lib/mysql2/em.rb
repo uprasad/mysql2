@@ -42,10 +42,6 @@ module Mysql2
           super(sql, opts)
         end
       end
-
-      def where(condition)
-        self.query("select * from users where #{condition}")
-      end
     end
   end
 end
